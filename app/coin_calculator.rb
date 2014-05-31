@@ -9,5 +9,10 @@ module CoinCalculator
     get '/' do
       erb :index
     end
+
+    post '/calculate' do
+      @pennies = params[:pennies]
+      erb :result
+    end
   end
 end
