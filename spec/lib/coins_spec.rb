@@ -47,4 +47,13 @@ describe CoinCalculator::Coin do
       end
     end
   end
+
+  context 'pounds decimal' do
+    it "returns the correct number of uk coins for '1.87'" do
+      pennies = "1.87"
+      expected_coins = { "two_pound" => 0, "one_pound" => 1, "fifty_pence" => 1, "twenty_pence" => 1, "two_pence" => 8, "one_pence" => 1 }
+
+      expect(@coins.return_minimum_coins(pennies)).to eql(expected_coins)
+    end
+  end
 end
