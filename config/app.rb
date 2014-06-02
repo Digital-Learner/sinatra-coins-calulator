@@ -9,3 +9,8 @@ $LOAD_PATH << 'lib'
   path = File.join(File.dirname(__FILE__), '..', dir, '**', '*.rb')
   Dir[path].each { |file| require file }
 end
+
+  if $0 == __FILE__
+    require 'pry'
+    binding.pry
+  end
