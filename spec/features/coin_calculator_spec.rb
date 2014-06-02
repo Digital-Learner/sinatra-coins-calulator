@@ -20,5 +20,9 @@ describe CoinCalculator::Main, type: :feature do
     expect(page).to have_content("Denomination")
     expect(page).to have_content("Description")
     expect(page).to have_content("Quantity")
+
+    expect(page).to have_image('2-pence-coin')
+    expect(page).to have_content('2 pence')
+    expect(page).to have_content(2)
   end
 end
