@@ -15,7 +15,7 @@ module CoinCalculator
     def validate_input(data)
       matched = data.match(/(^[£]?)(\d+[.]?\d*)([p]?$)/)
       unless matched.nil?
-        canonical_pence = to_pence(matched.captures[1])
+        canonical_pence = to_pence(matched.captures)
         calculate_minimum_coins(canonical_pence)
       else
         return {}
@@ -23,7 +23,12 @@ module CoinCalculator
     end
 
     def to_pence(input)
-      input.include?('.') ? (input.to_f.round(2) * 100).to_i : input
+      pound_group, amount, pence_group = input[0], input[1], input[2]
+      if amount.include?('.')
+        (amount.to_f.round(2) * 100).to_i
+      else
+        pound_group.include?('£') ? amount.to_i * 100 : amount
+      end
     end
 
     def calculate_minimum_coins(pence)
