@@ -13,8 +13,8 @@ module CoinCalculator
     end
 
     post '/calculate' do
-      @pennies = params[:pennies]
-      @result = CoinCalculator::Coin.new.return_minimum_coins(@pennies)
+      @amount = params[:amount]
+      @result = CoinCalculator::Coin.new.return_minimum_coins(@amount)
       erb :result
     end
   end
