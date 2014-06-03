@@ -32,5 +32,6 @@ describe CoinCalculator::Main, type: :feature do
     click_button 'Calculate'
 
     expect(page).to have_content 'A simple Coin Calculator'
+    expect(page).to have_content("You must enter an amount")
   end
 end

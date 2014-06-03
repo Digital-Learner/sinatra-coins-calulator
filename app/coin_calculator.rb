@@ -1,11 +1,14 @@
 require 'sinatra/base'
 require 'sinatra/assetpack'
 require 'coin'
+require 'sinatra/flash'
 
 module CoinCalculator
   class Main < Sinatra::Base
 
     register Sinatra::AssetPack
+    register Sinatra::Flash
+
     assets do
       serve '/js', from: 'assets/js'
       serve '/bower_components', from: 'bower_components'
@@ -29,6 +32,7 @@ module CoinCalculator
     set :static, true
     set :public_dir, './public'
     enable :logging
+    enable :sessions
 
     get '/' do
       erb :index
@@ -41,6 +45,7 @@ module CoinCalculator
       unless @result.empty?
         erb :result
       else
+        flash[:error] = "You must enter an amount"
         redirect to('/')
       end
     end
