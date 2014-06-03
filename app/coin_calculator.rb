@@ -37,7 +37,12 @@ module CoinCalculator
     post '/calculate' do
       @amount = params[:amount]
       @result = CoinCalculator::Coin.new.return_minimum_coins(@amount)
-      erb :result
+
+      unless @result.empty?
+        erb :result
+      else
+        redirect to('/')
+      end
     end
   end
 end

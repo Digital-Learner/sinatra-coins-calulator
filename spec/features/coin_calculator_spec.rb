@@ -25,4 +25,12 @@ describe CoinCalculator::Main, type: :feature do
     expect(page).to have_content('2 pence')
     expect(page).to have_content(2)
   end
+
+  it "returns a warning when no amount entered" do
+    visit '/'
+    fill_in :amount, with: ''
+    click_button 'Calculate'
+
+    expect(page).to have_content 'A simple Coin Calculator'
+  end
 end
