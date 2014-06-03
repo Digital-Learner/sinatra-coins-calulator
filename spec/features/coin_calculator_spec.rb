@@ -9,14 +9,14 @@ describe CoinCalculator::Main, type: :feature do
     expect(page).to have_image('2013-Underground.jpeg', '2013 Underground 2 pound coin')
   end
 
-  it "correctly calculates the minimum number of coins to issue for the specified number of 'pennies'" do
-    @pennies = 4
+  it "correctly calculates the minimum number of coins to issue for the 'requested amount'" do
+    @requested_amount = 4
 
     visit '/'
-    fill_in :pennies, with: @pennies
+    fill_in :amount, with: @requested_amount
     click_button 'Calculate'
 
-    expect(page).to have_content("Here is the minimum number of coins for your request of #{@pennies} pence.")
+    expect(page).to have_content("Here is the minimum number of coins for your request of #{@requested_amount} pence.")
     expect(page).to have_content("Denomination")
     expect(page).to have_content("Description")
     expect(page).to have_content("Quantity")
