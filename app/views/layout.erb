@@ -1,14 +1,21 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <title>UK Coin Calculator</title>
-  <meta charset="utf-8">
-</head>
-<body>
-  <h1>A simple Coin Calculator</h1>
-
-  <img id='main-img' src='/images/2013-Underground.jpeg' alt='2013 Underground 2 pound coin'>
-
-  <%= yield %>
-</body>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coinly - A UK Coin Calculator</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>A simple Coin Calculator</h1>
+      </div>
+      <div>
+        <img id='main-img' src='/images/2013-Underground.jpeg' alt='2013 Underground 2 pound coin'>
+        <%= yield %>
+      </div>
+    </div>
+  </body>
 </html>

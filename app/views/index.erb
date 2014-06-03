@@ -1,5 +1,12 @@
+<section>
+  <%= styled_flash %>
+</section>
 <form action='/calculate' method='post'>
-  <label for='pennies'>Amount in pennies</label>
-  <input type='text' id='pennies' name='pennies' placeholder='Enter amount in pennies .. ' maxlength='10'/>
-  <input type='submit' value='Calculate'/>
+  <div class="large-3 medium-3 columns">
+    <label for='amount'>Amount</label>
+    <input type='text' id='amount' name='amount' placeholder='Enter amount .. ' maxlength='10'/>
+  </div>
+  <div class="large-6 medium-6 columns">
+    <input type='submit' value='Calculate' class="button small"/>
+  </div>
 </form>
