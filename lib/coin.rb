@@ -38,7 +38,7 @@ module CoinCalculator
       DENOMINATIONS_IN_PENCE.keys.each do |k|
         remaining_pence = coin(k, remaining_pence)
       end
-      return @uk_coins
+      @uk_coins.select{|k,v| v > 0}
     end
 
     def coin(denomination, amount)
