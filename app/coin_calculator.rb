@@ -49,5 +49,9 @@ module CoinCalculator
         redirect to('/')
       end
     end
+
+    get '/about' do
+      erb :about
+    end
   end
 end
