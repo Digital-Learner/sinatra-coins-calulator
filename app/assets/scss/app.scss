@@ -2,3 +2,15 @@
 @import "foundation";
 
 @import "partials/fonts";
+
+p#result {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+#requested-amount {
+  line-height: 1.5;
+  color: gray;
+  font-style: bold;
+  font-size: 22px;
+}
