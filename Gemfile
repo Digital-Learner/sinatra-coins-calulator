@@ -5,7 +5,6 @@ gem 'sinatra-assetpack'
 gem 'sinatra-flash'
 gem 'rack'
 gem 'thin'
-gem 'font-awesome-sass'
 
 group :development do
   gem 'shotgun'
