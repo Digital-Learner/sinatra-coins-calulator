@@ -7991,10 +7991,406 @@ th.hide-for-touch {
   font-style: normal;
 }
 
+/*
+ * Foundation Icons v 3.0
+ * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
+ * MIT License
+ */
 @font-face {
-  font-family: 'SansationRegular';
-  src: url('/fonts/Sansation/Sansation_Regular-webfont.eot');
-  src: url('/fonts/Sansation/Sansation_Regular-webfont.eot?#iefix') format("embedded-opentype"), url('/fonts/Sansation/Sansation_Regular-webfont.woff') format("woff"), url('/fonts/Sansation/Sansation_Regular-webfont.ttf') format("truetype"), url('/fonts/Sansation/Sansation_Regular-webfont.svg#SansationRegular') format("svg");
+  font-family: "foundation-icons";
+  src: url('/fonts/foundation-icons/foundation-icons.eot');
+  src: url('/fonts/foundation-icons/foundation-icons.eot?#iefix') format("embedded-opentype"), url('/fonts/foundation-icons/foundation-icons.woff') format("woff"), url('/fonts/foundation-icons/foundation-icons.ttf') format("truetype"), url('/fonts/foundation-icons/foundation-icons.svg#fontcustom') format("svg");
   font-weight: normal;
   font-style: normal;
+}
+
+/* line 85, ../../app/assets/scss/partials/_fonts.scss */
+.fi-alert:before,
+.fi-align-center:before,
+.fi-align-justify:before,
+.fi-align-left:before,
+.fi-align-right:before,
+.fi-arrow-down:before,
+.fi-arrow-left:before,
+.fi-arrow-right:before,
+.fi-arrow-up:before,
+.fi-check:before,
+.fi-checkbox:before,
+.fi-clock:before,
+.fi-css3:before,
+.fi-dollar:before,
+.fi-euro:before,
+.fi-filter:before,
+.fi-graph-bar:before,
+.fi-graph-horizontal:before,
+.fi-graph-pie:before,
+.fi-heart:before,
+.fi-home:before,
+.fi-html5:before,
+.fi-info:before,
+.fi-laptop:before,
+.fi-list-bullet:before,
+.fi-list-number:before,
+.fi-list-thumbnails:before,
+.fi-list:before,
+.fi-loop:before,
+.fi-mail:before,
+.fi-male:before,
+.fi-mobile:before,
+.fi-monitor:before,
+.fi-mountains:before,
+.fi-page-multiple:before,
+.fi-paw:before,
+.fi-play-circle:before,
+.fi-play:before,
+.fi-plus:before,
+.fi-pound:before,
+.fi-refresh:before,
+.fi-results-demographics:before,
+.fi-results:before,
+.fi-shopping-cart:before,
+.fi-shuffle:before,
+.fi-social-github:before,
+.fi-social-google-plus:before,
+.fi-social-linkedin:before,
+.fi-social-skype:before,
+.fi-social-stack-overflow:before,
+.fi-social-zurb:before,
+.fi-tablet-portrait:before,
+.fi-thumbnails:before,
+.fi-widget:before,
+.fi-x-circle:before,
+.fi-x:before,
+.fi-yen:before {
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+/* line 97, ../../app/assets/scss/partials/_fonts.scss */
+.fi-alert:before {
+  content: "\f101";
+}
+
+/* line 98, ../../app/assets/scss/partials/_fonts.scss */
+.fi-align-center:before {
+  content: "\f102";
+}
+
+/* line 99, ../../app/assets/scss/partials/_fonts.scss */
+.fi-align-justify:before {
+  content: "\f103";
+}
+
+/* line 100, ../../app/assets/scss/partials/_fonts.scss */
+.fi-align-left:before {
+  content: "\f104";
+}
+
+/* line 101, ../../app/assets/scss/partials/_fonts.scss */
+.fi-align-right:before {
+  content: "\f105";
+}
+
+/* line 102, ../../app/assets/scss/partials/_fonts.scss */
+.fi-arrow-down:before {
+  content: "\f109";
+}
+
+/* line 103, ../../app/assets/scss/partials/_fonts.scss */
+.fi-arrow-left:before {
+  content: "\f10a";
+}
+
+/* line 104, ../../app/assets/scss/partials/_fonts.scss */
+.fi-arrow-right:before {
+  content: "\f10b";
+}
+
+/* line 105, ../../app/assets/scss/partials/_fonts.scss */
+.fi-arrow-up:before {
+  content: "\f10c";
+}
+
+/* line 106, ../../app/assets/scss/partials/_fonts.scss */
+.fi-check:before {
+  content: "\f126";
+}
+
+/* line 107, ../../app/assets/scss/partials/_fonts.scss */
+.fi-checkbox:before {
+  content: "\f127";
+}
+
+/* line 108, ../../app/assets/scss/partials/_fonts.scss */
+.fi-clock:before {
+  content: "\f12b";
+}
+
+/* line 109, ../../app/assets/scss/partials/_fonts.scss */
+.fi-css3:before {
+  content: "\f138";
+}
+
+/* line 110, ../../app/assets/scss/partials/_fonts.scss */
+.fi-dollar:before {
+  content: "\f142";
+}
+
+/* line 111, ../../app/assets/scss/partials/_fonts.scss */
+.fi-euro:before {
+  content: "\f146";
+}
+
+/* line 112, ../../app/assets/scss/partials/_fonts.scss */
+.fi-filter:before {
+  content: "\f14b";
+}
+
+/* line 113, ../../app/assets/scss/partials/_fonts.scss */
+.fi-graph-bar:before {
+  content: "\f153";
+}
+
+/* line 114, ../../app/assets/scss/partials/_fonts.scss */
+.fi-graph-horizontal:before {
+  content: "\f154";
+}
+
+/* line 115, ../../app/assets/scss/partials/_fonts.scss */
+.fi-graph-pie:before {
+  content: "\f155";
+}
+
+/* line 116, ../../app/assets/scss/partials/_fonts.scss */
+.fi-heart:before {
+  content: "\f159";
+}
+
+/* line 117, ../../app/assets/scss/partials/_fonts.scss */
+.fi-home:before {
+  content: "\f15a";
+}
+
+/* line 118, ../../app/assets/scss/partials/_fonts.scss */
+.fi-html5:before {
+  content: "\f15b";
+}
+
+/* line 119, ../../app/assets/scss/partials/_fonts.scss */
+.fi-info:before {
+  content: "\f15e";
+}
+
+/* line 120, ../../app/assets/scss/partials/_fonts.scss */
+.fi-laptop:before {
+  content: "\f161";
+}
+
+/* line 121, ../../app/assets/scss/partials/_fonts.scss */
+.fi-list-bullet:before {
+  content: "\f166";
+}
+
+/* line 122, ../../app/assets/scss/partials/_fonts.scss */
+.fi-list-number:before {
+  content: "\f167";
+}
+
+/* line 123, ../../app/assets/scss/partials/_fonts.scss */
+.fi-list-thumbnails:before {
+  content: "\f168";
+}
+
+/* line 124, ../../app/assets/scss/partials/_fonts.scss */
+.fi-list:before {
+  content: "\f169";
+}
+
+/* line 125, ../../app/assets/scss/partials/_fonts.scss */
+.fi-loop:before {
+  content: "\f16b";
+}
+
+/* line 126, ../../app/assets/scss/partials/_fonts.scss */
+.fi-mail:before {
+  content: "\f16d";
+}
+
+/* line 127, ../../app/assets/scss/partials/_fonts.scss */
+.fi-male:before {
+  content: "\f170";
+}
+
+/* line 128, ../../app/assets/scss/partials/_fonts.scss */
+.fi-mobile-signal:before {
+  content: "\f177";
+}
+
+/* line 129, ../../app/assets/scss/partials/_fonts.scss */
+.fi-mobile:before {
+  content: "\f178";
+}
+
+/* line 130, ../../app/assets/scss/partials/_fonts.scss */
+.fi-monitor:before {
+  content: "\f179";
+}
+
+/* line 131, ../../app/assets/scss/partials/_fonts.scss */
+.fi-mountains:before {
+  content: "\f17a";
+}
+
+/* line 132, ../../app/assets/scss/partials/_fonts.scss */
+.fi-page-multiple:before {
+  content: "\f18a";
+}
+
+/* line 133, ../../app/assets/scss/partials/_fonts.scss */
+.fi-paw:before {
+  content: "\f192";
+}
+
+/* line 134, ../../app/assets/scss/partials/_fonts.scss */
+.fi-play-circle:before {
+  content: "\f196";
+}
+
+/* line 135, ../../app/assets/scss/partials/_fonts.scss */
+.fi-play:before {
+  content: "\f198";
+}
+
+/* line 136, ../../app/assets/scss/partials/_fonts.scss */
+.fi-plus:before {
+  content: "\f199";
+}
+
+/* line 137, ../../app/assets/scss/partials/_fonts.scss */
+.fi-pound:before {
+  content: "\f19a";
+}
+
+/* line 138, ../../app/assets/scss/partials/_fonts.scss */
+.fi-refresh:before {
+  content: "\f1a5";
+}
+
+/* line 139, ../../app/assets/scss/partials/_fonts.scss */
+.fi-results-demographics:before {
+  content: "\f1a6";
+}
+
+/* line 140, ../../app/assets/scss/partials/_fonts.scss */
+.fi-results:before {
+  content: "\f1a7";
+}
+
+/* line 141, ../../app/assets/scss/partials/_fonts.scss */
+.fi-shopping-cart:before {
+  content: "\f1b1";
+}
+
+/* line 142, ../../app/assets/scss/partials/_fonts.scss */
+.fi-shuffle:before {
+  content: "\f1b2";
+}
+
+/* line 143, ../../app/assets/scss/partials/_fonts.scss */
+.fi-social-github:before {
+  content: "\f1c9";
+}
+
+/* line 144, ../../app/assets/scss/partials/_fonts.scss */
+.fi-social-google-plus:before {
+  content: "\f1ca";
+}
+
+/* line 145, ../../app/assets/scss/partials/_fonts.scss */
+.fi-social-linkedin:before {
+  content: "\f1d0";
+}
+
+/* line 146, ../../app/assets/scss/partials/_fonts.scss */
+.fi-social-stack-overflow:before {
+  content: "\f1df";
+}
+
+/* line 147, ../../app/assets/scss/partials/_fonts.scss */
+.fi-social-zurb:before {
+  content: "\f1ec";
+}
+
+/* line 148, ../../app/assets/scss/partials/_fonts.scss */
+.fi-tablet-portrait:before {
+  content: "\f1f4";
+}
+
+/* line 149, ../../app/assets/scss/partials/_fonts.scss */
+.fi-thumbnails:before {
+  content: "\f1fa";
+}
+
+/* line 150, ../../app/assets/scss/partials/_fonts.scss */
+.fi-widget:before {
+  content: "\f214";
+}
+
+/* line 151, ../../app/assets/scss/partials/_fonts.scss */
+.fi-x-circle:before {
+  content: "\f216";
+}
+
+/* line 152, ../../app/assets/scss/partials/_fonts.scss */
+.fi-x:before {
+  content: "\f217";
+}
+
+/* line 153, ../../app/assets/scss/partials/_fonts.scss */
+.fi-yen:before {
+  content: "\f218";
+}
+
+/* line 6, ../../app/assets/scss/app.scss */
+p#result {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* line 11, ../../app/assets/scss/app.scss */
+#requested-amount {
+  line-height: 1.5;
+  color: gray;
+  font-style: bold;
+  font-size: 22px;
+}
+
+/* line 18, ../../app/assets/scss/app.scss */
+.fi-pound.style-medium {
+  font-size: 28px;
+  color: red;
+}
+
+/* line 23, ../../app/assets/scss/app.scss */
+.fi-refresh.style-medium {
+  font-size: 22px;
+  color: yellow;
+}
+
+/* line 28, ../../app/assets/scss/app.scss */
+.alert-box {
+  margin: 2rem 0;
+}
+
+/* line 32, ../../app/assets/scss/app.scss */
+button.tiny.submit-btn {
+  font-size: 0.875rem;
+  margin-top: 0.9rem;
 }

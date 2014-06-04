@@ -3,19 +3,39 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coinly - A UK Coin Calculator</title>
+    <title>Coiny - A UK Coin Calculator</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
     <div class="row">
-      <div class="large-12 columns">
-        <h1>A simple Coin Calculator</h1>
-      </div>
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <!-- Title Area -->
+          <li class="name"></li>
+          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+          <ul class="left">
+            <li><a href="/">Coiny</a></li>
+          </ul>
+          <ul class="right">
+            <li><a href="/about">About</a></li>
+          </ul>
+        </section>
+      </nav>
       <div>
         <img id='main-img' src='/images/2013-Underground.jpeg' alt='2013 Underground 2 pound coin'>
+        <div data-alert class="alert-box round" id="flash-type">
+          <%= styled_flash %>
+          <a href="#" class="close">&times;</a>
+        </div>
         <%= yield %>
       </div>
     </div>
+    <%= js :libs %>
+    <%= js :application %>
   </body>
 </html>

@@ -9,3 +9,146 @@
   font-style: normal;
 }
 
+/*
+ * Foundation Icons v 3.0
+ * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
+ * MIT License
+ */
+
+@font-face {
+  font-family: "foundation-icons";
+  src: font-url("foundation-icons/foundation-icons.eot");
+  src: font-url("foundation-icons/foundation-icons.eot?#iefix") format("embedded-opentype"),
+       font-url("foundation-icons/foundation-icons.woff") format("woff"),
+       font-url("foundation-icons/foundation-icons.ttf") format("truetype"),
+       font-url("foundation-icons/foundation-icons.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fi-alert:before,
+.fi-align-center:before,
+.fi-align-justify:before,
+.fi-align-left:before,
+.fi-align-right:before,
+.fi-arrow-down:before,
+.fi-arrow-left:before,
+.fi-arrow-right:before,
+.fi-arrow-up:before,
+.fi-check:before,
+.fi-checkbox:before,
+.fi-clock:before,
+.fi-css3:before,
+.fi-dollar:before,
+.fi-euro:before,
+.fi-filter:before,
+.fi-graph-bar:before,
+.fi-graph-horizontal:before,
+.fi-graph-pie:before,
+.fi-heart:before,
+.fi-home:before,
+.fi-html5:before,
+.fi-info:before,
+.fi-laptop:before,
+.fi-list-bullet:before,
+.fi-list-number:before,
+.fi-list-thumbnails:before,
+.fi-list:before,
+.fi-loop:before,
+.fi-mail:before,
+.fi-male:before,
+.fi-mobile:before,
+.fi-monitor:before,
+.fi-mountains:before,
+.fi-page-multiple:before,
+.fi-paw:before,
+.fi-play-circle:before,
+.fi-play:before,
+.fi-plus:before,
+.fi-pound:before,
+.fi-refresh:before,
+.fi-results-demographics:before,
+.fi-results:before,
+.fi-shopping-cart:before,
+.fi-shuffle:before,
+.fi-social-github:before,
+.fi-social-google-plus:before,
+.fi-social-linkedin:before,
+.fi-social-skype:before,
+.fi-social-stack-overflow:before,
+.fi-social-zurb:before,
+.fi-tablet-portrait:before,
+.fi-thumbnails:before,
+.fi-widget:before,
+.fi-x-circle:before,
+.fi-x:before,
+.fi-yen:before {
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.fi-alert:before { content: "\f101"; }
+.fi-align-center:before { content: "\f102"; }
+.fi-align-justify:before { content: "\f103"; }
+.fi-align-left:before { content: "\f104"; }
+.fi-align-right:before { content: "\f105"; }
+.fi-arrow-down:before { content: "\f109"; }
+.fi-arrow-left:before { content: "\f10a"; }
+.fi-arrow-right:before { content: "\f10b"; }
+.fi-arrow-up:before { content: "\f10c"; }
+.fi-check:before { content: "\f126"; }
+.fi-checkbox:before { content: "\f127"; }
+.fi-clock:before { content: "\f12b"; }
+.fi-css3:before { content: "\f138"; }
+.fi-dollar:before { content: "\f142"; }
+.fi-euro:before { content: "\f146"; }
+.fi-filter:before { content: "\f14b"; }
+.fi-graph-bar:before { content: "\f153"; }
+.fi-graph-horizontal:before { content: "\f154"; }
+.fi-graph-pie:before { content: "\f155"; }
+.fi-heart:before { content: "\f159"; }
+.fi-home:before { content: "\f15a"; }
+.fi-html5:before { content: "\f15b"; }
+.fi-info:before { content: "\f15e"; }
+.fi-laptop:before { content: "\f161"; }
+.fi-list-bullet:before { content: "\f166"; }
+.fi-list-number:before { content: "\f167"; }
+.fi-list-thumbnails:before { content: "\f168"; }
+.fi-list:before { content: "\f169"; }
+.fi-loop:before { content: "\f16b"; }
+.fi-mail:before { content: "\f16d"; }
+.fi-male:before { content: "\f170"; }
+.fi-mobile-signal:before { content: "\f177"; }
+.fi-mobile:before { content: "\f178"; }
+.fi-monitor:before { content: "\f179"; }
+.fi-mountains:before { content: "\f17a"; }
+.fi-page-multiple:before { content: "\f18a"; }
+.fi-paw:before { content: "\f192"; }
+.fi-play-circle:before { content: "\f196"; }
+.fi-play:before { content: "\f198"; }
+.fi-plus:before { content: "\f199"; }
+.fi-pound:before { content: "\f19a"; }
+.fi-refresh:before { content: "\f1a5"; }
+.fi-results-demographics:before { content: "\f1a6"; }
+.fi-results:before { content: "\f1a7"; }
+.fi-shopping-cart:before { content: "\f1b1"; }
+.fi-shuffle:before { content: "\f1b2"; }
+.fi-social-github:before { content: "\f1c9"; }
+.fi-social-google-plus:before { content: "\f1ca"; }
+.fi-social-linkedin:before { content: "\f1d0"; }
+.fi-social-stack-overflow:before { content: "\f1df"; }
+.fi-social-zurb:before { content: "\f1ec"; }
+.fi-tablet-portrait:before { content: "\f1f4"; }
+.fi-thumbnails:before { content: "\f1fa"; }
+.fi-widget:before { content: "\f214"; }
+.fi-x-circle:before { content: "\f216"; }
+.fi-x:before { content: "\f217"; }
+.fi-yen:before { content: "\f218"; }
+

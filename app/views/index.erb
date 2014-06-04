@@ -1,12 +1,16 @@
-<section>
-  <%= styled_flash %>
-</section>
+<div class="large-12 columns" id="main-h1-heading">
+  <h1>A simple Coin Calculator</h1>
+</div>
 <form action='/calculate' method='post'>
-  <div class="large-3 medium-3 columns">
+  <div class="large-4 medium-4 columns">
     <label for='amount'>Amount</label>
     <input type='text' id='amount' name='amount' placeholder='Enter amount .. ' maxlength='10'/>
   </div>
-  <div class="large-6 medium-6 columns">
-    <input type='submit' value='Calculate' class="button small"/>
+
+  <div class="large-8 medium-8 columns">
+    <button type="submit" class="btn btn-primary radius tiny submit-btn">
+      <i class="fi-refresh style-medium"></i> Calculate
+    </button>
   </div>
+
 </form>

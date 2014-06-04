@@ -45,9 +45,13 @@ module CoinCalculator
       unless @result.empty?
         erb :result
       else
-        flash[:error] = "You must enter an amount"
+        flash[:warning] = "You must enter an amount"
         redirect to('/')
       end
+    end
+
+    get '/about' do
+      erb :about
     end
   end
 end

@@ -2,3 +2,34 @@
 @import "foundation";
 
 @import "partials/fonts";
+
+p#result {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+#requested-amount {
+  line-height: 1.5;
+  color: gray;
+  font-style: bold;
+  font-size: 22px;
+}
+
+.fi-pound.style-medium {
+  font-size: 28px;
+  color: red;
+}
+
+.fi-refresh.style-medium {
+  font-size: 22px;
+  color: yellow;
+}
+
+.alert-box {
+  margin: 2rem 0;
+}
+
+button.tiny.submit-btn {
+  font-size: 0.875rem;
+  margin-top: 0.9rem;
+}
