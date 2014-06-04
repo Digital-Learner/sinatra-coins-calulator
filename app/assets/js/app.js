@@ -52,9 +52,4 @@ if ( $('div.flash').hasClass('success') ) {
 };
 // <-- Sinatra-Flash behaviour : End -->
 
-// Click for input-button-link
-$('#submit-amount').on( "click", function() {
-  var amount = $('input[name="amount"]').val();
-  alert('You requested: ' + amount);
-  // TODO: Ajax submission via POST
-});
+
