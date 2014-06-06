@@ -3,6 +3,11 @@
 $(document).foundation();
 
 $('div.alert-box').hide();
+Foundation.utils.S('.results-rolledout-images').hide();
+
+$('.submit-btn').on('click', function() {
+  $('div.alert-box').hide();
+});
 
 // <-- Sinatra-Flash behaviour : Start -->
 var sinatraFlashType = {
@@ -52,4 +57,17 @@ if ( $('div.flash').hasClass('success') ) {
 };
 // <-- Sinatra-Flash behaviour : End -->
 
+$('#thumbnail-results').on('click', function() {
+  Foundation.utils.S('.results-tabular').hide();
+  Foundation.utils.S('.results-rolledout-images').show();
+  // Foundation.utils.S('.results-rolledout-images').toggle('showOrHide');
+  // Foundation.utils.S('.results-tabular').toggle('showOrHide');
+});
 
+$('#tabular-results').on('click', function() {
+  Foundation.utils.S('.results-rolledout-images').hide();
+  Foundation.utils.S('.results-tabular').show();
+  // Problem with two images stacking use simple less elegant solution
+  // Foundation.utils.S('.results-rolledout-images').toggle('showOrHide');
+  // Foundation.utils.S('.results-tabular').toggle('showOrHide');
+});

@@ -8364,7 +8364,7 @@ p#result {
   margin-bottom: 3rem;
 }
 
-/* line 11, ../../app/assets/scss/app.scss */
+/* line 16, ../../app/assets/scss/app.scss */
 #requested-amount {
   line-height: 1.5;
   color: gray;
@@ -8372,28 +8372,45 @@ p#result {
   font-size: 22px;
 }
 
-/* line 18, ../../app/assets/scss/app.scss */
+/* line 23, ../../app/assets/scss/app.scss */
 .fi-pound.style-medium {
   font-size: 28px;
   color: red;
 }
 
-/* line 23, ../../app/assets/scss/app.scss */
+/* line 28, ../../app/assets/scss/app.scss */
 .fi-refresh.style-medium {
   font-size: 22px;
   color: yellow;
 }
 
-/* line 28, ../../app/assets/scss/app.scss */
+/* line 33, ../../app/assets/scss/app.scss */
 .alert-box {
   margin: 2rem 0;
 }
 
-/* line 32, ../../app/assets/scss/app.scss */
+/* line 37, ../../app/assets/scss/app.scss */
 button.tiny.submit-btn {
   font-size: 0.875rem;
   margin-top: 0.9rem;
 }
+
+/* line 42, ../../app/assets/scss/app.scss */
+.results-heading {
+  margin-bottom: 0.6rem;
+  float: right;
+}
+
+/* line 47, ../../app/assets/scss/app.scss */
+ul.horizontal-results li {
+  display: inline;
+  list-style-type: none;
+}
+/* line 53, ../../app/assets/scss/app.scss */
+ul.horizontal-results li img {
+  padding: 2.5px 0;
+}
+
 /* line 59, ../../app/assets/scss/app.scss */
 .top-bar-section a#coiny, a#about {
   color: white;
