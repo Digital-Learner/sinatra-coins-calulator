@@ -3,6 +3,11 @@
 
 @import "partials/fonts";
 
+#main-img {
+  height: 361px;
+  width: 603px;
+}
+
 p#result {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -32,4 +37,38 @@ p#result {
 button.tiny.submit-btn {
   font-size: 0.875rem;
   margin-top: 0.9rem;
+}
+
+.results-heading {
+  margin-bottom: 0.6rem;
+  float: right;
+}
+
+ul.horizontal-results li {
+  display: inline;
+  list-style-type: none;
+  // padding-right: 2.5px 10px 0 2.5px;
+  // padding-top: 2.5px;
+  // padding-bottom: 2.5px;
+  img {
+    padding: 2.5px 0;
+  }
+}
+
+// Add some styling for hovering on desktop menu
+.top-bar-section a#coiny, a#about {
+  color: white;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.top-bar-section a#coiny:hover, a#about:hover {
+  // color: red;
+  background: #56544F;
+  border-radius: 15px;
+  color: yellow;
+  text-shadow: -1px 1px 5px #03c, 1px -1px 5px #03c;
 }

@@ -19,20 +19,24 @@
 
         <section class="top-bar-section">
           <ul class="left">
-            <li><a href="/">Coiny</a></li>
+            <li><a href="/" id="coiny">Coiny</a></li>
           </ul>
           <ul class="right">
-            <li><a href="/about">About</a></li>
+            <li><a href="/about" id="about">About</a></li>
           </ul>
         </section>
       </nav>
-      <div>
-        <img id='main-img' src='/images/2013-Underground.jpeg' alt='2013 Underground 2 pound coin'>
+      <div class='small-12 small-centered columns'>
+      <div class='small-8 small-centered columns'>
+        <img class='' id='main-img' src='/images/2013-Underground.jpeg' alt='2013 Underground 2 pound coin'>
+      </div>
         <div data-alert class="alert-box round" id="flash-type">
           <%= styled_flash %>
           <a href="#" class="close">&times;</a>
         </div>
-        <%= yield %>
+        <div class="small-9 small-centered columns">
+          <%= yield %>
+        </div>
       </div>
     </div>
     <%= js :libs %>

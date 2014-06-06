@@ -1,0 +1,47 @@
+<div class="results-rolledout-images">
+  <div class="results-heading large-4 medium-4 columns"><span>Quantity</span>  <a href="#" id="tabular-results"><i class="fi-list style-medium"></i></a></div>
+
+    <ul class="horizontal-results">
+      <% if @result['two_pound'] %>
+        <% (1..@result['two_pound']).each do |n| %>
+          <li><img src="/images/2-pound-coin.jpg" alt="UK 2 pound coin" height="100" width="100"></li>
+        <% end %>
+      <% end %>
+    </ul>
+      <ul class="horizontal-results">
+      <% if @result['one_pound'] %>
+        <% (1..@result['one_pound']).each do |n| %>
+          <li><img src="/images/1-pound-coin.jpg" alt="UK 1 pound coin" height="100" width="100"></li>
+        <% end %>
+      <% end %>
+    </ul>
+      <ul class="horizontal-results">
+      <% if @result['fifty_pence'] %>
+        <% (1..@result['fifty_pence']).each do |n| %>
+          <li><img src="/images/50-pence-coin.jpg" alt="UK 50 pence coin" height="100" width="100"></li>
+        <% end %>
+      <% end %>
+    </ul>
+      <ul class="horizontal-results">
+      <% if @result['twenty_pence'] %>
+        <% (1..@result['twenty_pence']).each do |n| %>
+          <li><img src="/images/20-pence-coin.png" alt="UK 20 pence coin" height="100" width="100"></li>
+        <% end %>
+      <% end %>
+    </ul>
+      <ul class="horizontal-results">
+      <% if @result['two_pence'] %>
+        <% (1..@result['two_pence']).each do |n| %>
+          <li><img src="/images/2-pence-coin.png" alt="UK 2 pence coin" height="100" width="100"></li>
+        <% end %>
+      <% end %>
+    </ul>
+      <ul class="horizontal-results">
+        <% if @result['one_pence'] %>
+        <% (1..@result['one_pence']).each do |n| %>
+          <li><img src="/images/1-penny-coin.png" alt="UK 1 pence coin" height="100" width="100"></li>
+        <% end %>
+      <% end %>
+    </ul>
+
+</div>

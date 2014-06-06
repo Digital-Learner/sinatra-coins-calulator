@@ -1,53 +1,5 @@
 <p id='result'>Here is the minimum number of coins for your request of <span id='requested-amount'><%= @amount %></span> pence.</p>
 
-<table>
-  <thead>
-    <th>Denomination</th>
-    <th>Description</th>
-    <th>Quantity</th>
-  </thead>
-  <tbody>
-    <% if @result['two_pound'] %>
-      <tr>
-        <td><img src="/images/2-pound-coin.jpg" alt="UK 2 pound coin" height="100" width="100"></td>
-        <td>2 pound</td>
-        <td><%= @result['two_pound'] %></td>
-      </tr>
-    <% end %>
-    <% if @result['one_pound'] %>
-      <tr>
-        <td><img src="/images/1-pound-coin.jpg" alt="UK 1 pound coin" height="100" width="100"></td>
-        <td>1 pound</td>
-        <td><%= @result['one_pound'] %></td>
-      </tr>
-    <% end %>
-    <% if @result['fifty_pence'] %>
-      <tr>
-        <td><img src="/images/50-pence-coin.jpg" alt="UK 50 pence coin" height="100" width="100"></td>
-        <td>50 pence</td>
-        <td><%= @result['fifty_pence'] %></td>
-      </tr>
-    <% end %>
-    <% if @result['twenty_pence'] %>
-      <tr>
-        <td><img src="/images/20-pence-coin.png" alt="UK 20 pence coin" height="100" width="100"></td>
-        <td>20 pence</td>
-        <td><%= @result['twenty_pence'] %></td>
-      </tr>
-    <% end %>
-    <% if @result['two_pence'] %>
-      <tr>
-        <td><img src="/images/2-pence-coin.png" alt="UK 2 pence coin" height="100" width="100"></td>
-        <td>2 pence</td>
-        <td><%= @result['two_pence'] %></td>
-      </tr>
-    <% end %>
-    <% if @result['one_pence'] %>
-      <tr>
-        <td><img src="/images/1-penny-coin.png" alt="UK 1 pence coin" height="100" width="100"></td>
-        <td>1 pence</td>
-        <td><%= @result['one_pence'] %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<%= erb '_tabular_results'.to_sym %>
+
+<%= erb '_thumbnail_results'.to_sym %>
