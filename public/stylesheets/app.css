@@ -8394,3 +8394,20 @@ button.tiny.submit-btn {
   font-size: 0.875rem;
   margin-top: 0.9rem;
 }
+/* line 59, ../../app/assets/scss/app.scss */
+.top-bar-section a#coiny, a#about {
+  color: white;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 68, ../../app/assets/scss/app.scss */
+.top-bar-section a#coiny:hover, a#about:hover {
+  background: #56544F;
+  border-radius: 15px;
+  color: yellow;
+  text-shadow: -1px 1px 5px #03c, 1px -1px 5px #03c;
+}
