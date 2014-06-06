@@ -33,6 +33,23 @@ button.tiny.submit-btn {
   font-size: 0.875rem;
   margin-top: 0.9rem;
 }
+
+.results-heading {
+  margin-bottom: 0.6rem;
+  float: right;
+}
+
+ul.horizontal-results li {
+  display: inline;
+  list-style-type: none;
+  // padding-right: 2.5px 10px 0 2.5px;
+  // padding-top: 2.5px;
+  // padding-bottom: 2.5px;
+  img {
+    padding: 2.5px 0;
+  }
+}
+
 // Add some styling for hovering on desktop menu
 .top-bar-section a#coiny, a#about {
   color: white;
