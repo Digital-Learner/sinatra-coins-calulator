@@ -8359,6 +8359,12 @@ th.hide-for-touch {
 }
 
 /* line 6, ../../app/assets/scss/app.scss */
+#main-img {
+  height: 361px;
+  width: 603px;
+}
+
+/* line 11, ../../app/assets/scss/app.scss */
 p#result {
   margin-top: 3rem;
   margin-bottom: 3rem;
