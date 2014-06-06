@@ -46,3 +46,9 @@ Likewise, the application should not accept the following inputs,
 | 1x            | 0                 | non-numeric character                   |
 | £1x.0p        | 0                 | non-numeric character                   |
 | £p            | 0                 | missing digits                          |
+
+### ToDo: (extensions to project)
+
+- randomly choose image from various appropriate coins
+- implement presenter pattern
+- use currency API to convert between currencies
